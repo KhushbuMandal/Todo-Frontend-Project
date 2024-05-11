@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="" id="lightMode" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo</h1>
+        <button type="button">
+          <img src="images/icon-sun.svg" alt="Theme view mode switcher" id="icon"/>
+        </button>
+      </header>
+      <main>
+        <form action="/" id="form" name="todo-form">
+          <div class="checkbox-div">
+            <label for="checkbox" class="label">checkbox</label>
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="checkbox-round"
+              disabled
+            />
+          </div>
+          <div class="todo-div">
+            <label for="todo" class="label">todo</label>
+            <input type="text" placeholder="Create a new todo..." id="todo" />
+          </div>
+        </form>
+        <div class="todo-items">
+          <div class="empty-message">Nothing to do. Add todo....</div>
+          <ul class="todosList"></ul>
+          <div class="status-div">
+            <p><span data-counter>0</span> items left</p>
+            <div class="middle-div"></div>
+            <button type="button">Clear Completed</button>
+          </div>
+        </div>
+        <div class="status-div__middle-div">
+          <button type="button">All</button>
+          <button type="button">Active</button>
+          <button type="button">Completed</button>
+        </div>
+        <div class="drag-drop-div">Drag and drop to reorder list</div>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
